@@ -1,0 +1,37 @@
+.P-account
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 100%
+    background: linear-gradient(#f48c8d,#f4c58d)
+    h1
+        margin-top: 50px
+        text-align: center
+        color: #fff
+        font-size: 40px
+    .ipt-con
+        margin: 20px auto 0
+        text-align: center
+
+.content-container{
+  display: flex;
+  flexDirection: row;
+  
+}
+
+
+.camera-container {
+  position: relative;
+  width: 60%; /* 调整摄像头画面在页面中的宽度 */
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+  overflow: hidden;
+}
+
+.camera-container video {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 70%;
+  height: 60%;
+}
