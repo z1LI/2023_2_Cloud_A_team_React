@@ -17,9 +17,11 @@ function Account() {
     
             // 发送图像到后端API
             try {
-              const response = await axios.post('http://localhost:3001/api/receiveImage', {
+              const response = await axios.post('https://faa2-119-194-121-58.ngrok-free.app/api/receiveImage', {
                 image: imageSrc,
               });
+
+              // console.log('req data:', response.config.data)
     
               // 假设后端返回文本数据
               const receivedText = response.data.text;
