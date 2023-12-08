@@ -9,6 +9,7 @@ import axios from 'axios'
 function Account() {
     const webcamRef = useRef(null);
     const [capturedText, setCapturedText] = useState('');
+    // navigator.mediaDevices.getUserMedia({ video: true })
 
     useEffect(() => {
         const captureFrame = async () => {
@@ -17,7 +18,7 @@ function Account() {
     
             // 发送图像到后端API
             try {
-              const response = await axios.post('https://faa2-119-194-121-58.ngrok-free.app/api/receiveImage', {
+              const response = await axios.post('https://3ec7-115-23-153-111.ngrok-free.app/api/receiveImage', {
                 image: imageSrc,
               });
 
